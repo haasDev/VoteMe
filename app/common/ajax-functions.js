@@ -1,7 +1,7 @@
 var appUrl =  window.location.origin;
 
 var ajaxFunctions = {
-  ready: function ready(fn){
+  ready: function(fn){
 
     if(typeof fn !== 'function') return;
 
@@ -9,7 +9,7 @@ var ajaxFunctions = {
 
     document.addEventListener('DOMContentLoaded', fn, false);
   },
-  ajaxRequest: function ajaxRequest (method, url, callback) {
+  ajaxRequest: function (method, url, callback) {
     var xmlhttp = new XMLHttpRequest();
 
     xmlhttp.onreadystatechange = function(){
