@@ -1,20 +1,23 @@
 {
   "name": "voteme",
   "version": "1.0.0",
-  "description": "A Web App that will allow a user to create and store polls and poll results.",
+  "description": "app that will allow a user to create store change and delete polls along with their results",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": "https://github.com/haasDev/VoteMe.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/haasDev/VoteMe.git"
+  },
   "author": "Tyler Haas",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/haasDev/VoteMe/issues"
+  },
+  "homepage": "https://github.com/haasDev/VoteMe#readme",
   "dependencies": {
-    "dotenv": "^1.2.0",
     "express": "^4.13.3",
-    "express-session": "^1.12.1",
-    "mongoose": "^4.2.8",
-    "passport": "^0.3.2",
-    "passport-github": "^1.0.0"
+    "mongodb": "^2.1.0"
   }
 }
